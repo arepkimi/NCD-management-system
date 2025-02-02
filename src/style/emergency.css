@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FFF2DF;
+  font-family: Montserrat;
+}
+
+.picture{
+  width: 100px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3E2522;
+  height: 90px;
+}
+
+.header-title{
+  font-size: 34px;
+  font-weight: bold;
+  color: #FFF2DF;
+}
+
+.middle-section{
+  display: flex;
+  align-items: center;
+}
+
+.right-section{
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.right-section .material-symbols-rounded{
+  background-color: #FFE0B2;
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.right-section .material-symbols-rounded:hover{
+  transform: scale(1.05);
+}
+
+.logo{
+  height: 34px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+.description{
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.emergency-button{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+  color: white;
+  background-color: red;
+  border-style: solid;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  border-width: 2px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.emergency-button:hover{
+  transform: scale(1.1);
+}
+
+.bottom{
+  height: 38px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8C6E63;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  font-size: 18px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-link:hover{
+  text-decoration: underline;
+}
+
+.popup-call-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emergency-contact-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.emergency-contact{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #FFE0B2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-logo img{
+  width: 50px;
+}
+
+.contact-detail-grid{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.contact-name, .hospital-name{
+  font-weight: 650;
+}
+
+#popup-call{
+  display: none; /* Hide the pop-up initially */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 500px;
+  background-color: #D3A376;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+#popup-doctor{
+  display: none; /* Hide the pop-up initially */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 430px;
+  height: 500px;
+  background-color: #D3A376;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+#popup-hospital{
+  display: none; /* Hide the pop-up initially */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 550px;
+  background-color: #D3A376;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.popup-hospital-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup-doctor-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.close-button{
+  display: flex;
+  justify-content: right;
+}
+
+.close-button .material-symbols-rounded{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button .material-symbols-rounded:hover{
+  background-color: darkred;
+}
+
+.doctor-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.doctor-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #FFE0B2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.doctor-picture{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-detail{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.doctor-detail .property p{
+  font-weight: 500;
+}
+
+.doctor-detail p a{
+  text-decoration: none;
+}
+
+.doctor-name{
+  font-weight: 650;
+  margin-bottom: 10px;
+}
+
+.doctor-image{
+  width: 60px;
+}
+
+.hospital-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hospital-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  background-color: #FFE0B2;
+  border-radius: 5px;
+}
+
+.hospital-picture{
+  display: flex;
+  justify-content: center;
+}
+
+.hospital-picture img{
+  width: 50px;
+}

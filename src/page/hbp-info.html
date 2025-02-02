@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NCD Information</title>
+
+    <link rel="stylesheet" href="/cat304/src/style/hbp-info.css">
+  </head>
+
+  <body>
+    <h1 class="title">High Blood Pressure</h1>
+
+    <div class="user-input">
+      <form class="form" action="hbp-info.php" method="POST">
+        <div class="history-input">
+          <label for="history">Does anyone in your family have high blood pressure?</label><br>
+          <input type="radio" id="yes" value="Yes" name="history" required/>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" value="No" name="history" required/>
+          <label for="no">No</label>
+        </div>
+
+        <br/>
+
+        <div class="stress-input">
+          <label for="stress">How often do you experience stress in your daily life?</label><br>
+          <select id="stress" name="stress">
+            <option value="Never">Never</option>
+            <option value="Sometime">Sometime</option>
+            <option value="Often">Often</option>
+          </select>
+        </div>
+
+        <br/>
+
+        <div class="exercise-input">
+          <label for="exercise">How would you describe your current level of physical activity?</label><br>
+          <select id="exercise" name="exercise">
+            <option value="Sedentary">Sedentary</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+          </select>
+        </div>
+
+        <br/>
+
+        <div class="diet-input">
+          <label for="diet">How often you take food that contain high salt &#40;eg. cheese&#41;</label><br>
+          <select id="diet" name="diet">
+            <option value="Never">Never</option>
+            <option value="Sometime">Sometime</option>
+            <option value="Often">Often</option>
+          </select>
+        </div>
+
+        <br/>
+
+        <div class="buttons">
+          <button type="reset" class="reset-button">Reset</button>
+          <button type="submit" name="submit" class="submit-button">Save and Continue</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FFF2DF;
+  font-family: Montserrat;
+}
+
+.title{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form{
+  background-color: #D3A376;
+  padding: 20px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #cfcfcf;
+}
+
+.user-input{
+  display: flex;
+  justify-content: center;
+}
+
+#sugar-intake, #exercise, #diet{
+  width: 100%;
+  padding: 6px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button{
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.reset-button{
+  color: white;
+  background-color: #8C6E63;
+  transition: background-color 0.15s;
+}
+
+.reset-button:hover{
+  background-color: #3E2522;
+}
+
+.submit-button{
+  color: white;
+  background-color: #3E2522;
+  transition: transform 0.15s;
+}
+
+.submit-button:hover{
+  transform: scale(1.02);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/cat304/src/style/login&signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <div id="loginForm" class="form-wrapper active">
+        <h2>Login</h2>
+        <form action="login_process.php" method="POST">
+          <input type="text" name="username" placeholder="Enter your username" required>
+          <div class="password-container">
+            <input type="password" name="password" id="loginPassword" placeholder="Enter your password" required>
+            <span id="toggleLoginPassword" class="eye-icon" onclick="togglePassword('loginPassword')">👁️</span>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div class="link-container">
+          <a href="signup.html">Create an account</a>
+          <a href="resetpassword.html">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 NCD Fitness. All Rights Reserved.
+  </footer>
+
+  <script>
+    function togglePassword(inputId) {
+      const passwordInput = document.getElementById(inputId);
+      const passwordType = passwordInput.type === "password" ? "text" : "password";
+      passwordInput.type = passwordType;
+    }
+  </script>
+</body>
+</html>

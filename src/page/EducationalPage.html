@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Page</title>
+    <link rel="stylesheet" href="/cat304/src/style/EducationalPage.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <img src="/cat304/src/pic/logo.png" alt="NCD Logo">
+        </div>
+        <div class="title">
+            <h1>EMPOWERING YOU TO MANAGE YOUR HEALTH</h1>
+            <p class="subtitle">"Knowledge is the first step to better health"</p>
+            <button class="explore-btn">EXPLORE OUR RESOURCES</button>
+        </div>
+        <!-- Icons Section -->
+        <div class="icons">
+            <a href="dashboard.php">
+            <div class="icon home" title="Home">
+                <i class="fas fa-home"></i> <!-- Home Icon -->
+            </div>
+            </a>
+
+            <a href="logout.html">
+                <div class="icon logout" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i> <!-- Logout Icon -->
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+    <!-- Learn Section -->
+<div class="section learn">
+    <h2>Learn To Manage Your NCD</h2>
+    <div class="cards"> 
+        <button type="submit" class="card green" onclick="openPopup1()"> <h3>Health Tips</h3> </button>
+        <div class="popup1" id="popuphealth" >
+            <h2>Important Tips For Daily Life</h2>
+            <ul>
+                <li>Stay hydrated by drinking at least 8 glasses of water daily.</li>
+                <li>Incorporate physical activity into your daily routine.</li>
+                <li>Eat a balanced diet rich in fruits, vegetables, and whole grains.</li>
+                <li>Avoid excessive sugar, salt, and processed foods.</li>
+                <li>Maintain a regular sleep schedule for 7-8 hours of rest.</li>
+            </ul>
+            <br>
+            <h2>Mental & Emotional Health</h2>
+            <ul>
+                <li>Practice Stress Management: Engage in relaxation techniques such as meditation, deep breathing exercises, or yoga.</li>
+                <li>Stay Connected: Maintain strong social connections with family and friends to boost emotional health.</li>
+                <li>Seek Help When Needed: Don’t hesitate to consult a mental health professional if you feel overwhelmed or anxious.</li>
+                <li>Engage in Hobbies: Make time for activities that bring you joy and relaxation.</li>
+            </ul>
+            <br>
+            <h2>Hygiene & Preventive Care</h2>
+            <ul>
+                <li>Wash Your Hands Frequently: Use soap and water to reduce the spread of germs.</li>
+                <li>Schedule Regular Check-Ups: Visit your doctor and dentist for routine exams and screenings.</li>
+                <li>Keep Vaccinations Up to Date: Protect yourself from preventable diseases.</li>
+                <li>Protect Your Skin: Use sunscreen daily and wear protective clothing to shield your skin from harmful UV rays.</li>
+            </ul>
+            <br>
+            <h2>Healthy Habits</h2>
+            <ul>
+                <li>Limit Alcohol Consumption: Drink alcohol in moderation or not at all.</li>
+                <li>Quit Smoking: Seek support if needed to stop smoking and avoid secondhand smoke.</li>
+                <li>Stay Active Mentally: Challenge your brain with puzzles, reading, or learning new skills.</li>
+                <li>Practice Portion Control: Eat mindfully to avoid overeating.</li>
+            </ul>
+            <br>
+            <h2>Environmental Considerations</h2>
+            <ul>
+                <li>Stay in a Clean Environment: Keep your home and workspace tidy to promote mental clarity and reduce allergens.</li>
+                <li>Limit Screen Time: Take regular breaks from electronic devices to reduce eye strain and improve sleep quality.</li>
+            </ul>
+            <br>
+            <h2>Adaptability and Growth</h2>
+            <ul>
+                <li>Stay Informed About Health: Keep up with the latest health research and adjust your habits accordingly.</li>
+                <li>Set Realistic Goals: Make gradual changes to build sustainable healthy habits over time.</li>
+            </ul>
+            <button type="button" onclick="closePopup1()">X</button>
+        </div>
+
+        <button type="submit" class="card green" onclick="openPopup2()"><h3>Disease Prevention</h3></button>
+        <div class="popup2" id="popupprevent">
+            <h2>How to Prevent Critical Disease ?</h2>
+            <ul>
+                <li>Maintain a Healthy Weight: Obesity increases the risk of chronic diseases like diabetes, heart disease, and certain cancers.</li>
+                <br>
+                <li>Exercise Regularly: Aim for at least 150 minutes of moderate exercise or 75 minutes of vigorous exercise per week.</li>
+                <br>
+                <li>Avoid Harmful Substances: Limit exposure to toxins like pesticides, industrial chemicals, and pollutants.</li>
+                <br>
+                <li>Practice Safe Food Handling: Wash hands, utensils, and surfaces when preparing food. Avoid cross-contamination between raw and cooked foods.</li>
+                <br>
+                <li>Stay Up-to-Date on Vaccines: Protect yourself from diseases like influenza, pneumonia, and hepatitis.</li>
+                <br>
+                <li>Use Insect Repellent: To prevent diseases like malaria and dengue, use repellents and sleep under mosquito nets in endemic areas.</li>
+                <br>
+                <li>Monitor Blood Pressure: Regularly check your blood pressure to prevent hypertension.</li>
+                <br>
+                <li>Control Blood Sugar Levels: Reduce your risk of diabetes by maintaining a healthy diet and exercising regularly.</li>
+                <br>
+                <li>Limit Alcohol Consumption: Excessive drinking increases the risk of liver disease and some cancers.</li>
+                <br>
+                <li>Stay Socially Active: Engage in social activities to maintain mental well-being and cognitive function.</li>
+                <br>
+                <li>Manage Stress: Chronic stress can contribute to heart disease, depression, and other conditions.</li>
+                <br>
+                <h2>Prevent the Spread of Disease</h2>
+                <div class="container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HXV74zb0Vcg?si=I2cYNFTKeQit9vN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>
+                <h2>How Do Infections Spread ?</h2>
+                <div class="container1">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RSu1who-Bk8?si=dVdNNCWf811Lp4my" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+            </ul>
+            <button type="button" onclick="closePopup2()">X</button>
+        </div>
+
+
+        <button type="submit" class="card green" onclick="openPopup3()"><h3>Lifestyle Change</h3></button>
+        <div class="popup3" id="popuplifesyle">
+            <h2>Physical Health</h2>
+        <ul>
+            <li>Stand More, Sit Less: Incorporate standing desks or take breaks to stand and stretch if you have a sedentary job.</li>
+            <br>
+            <li>Take the Stairs: Opt for stairs instead of elevators or escalators whenever possible to increase physical activity.</li>
+            <br>
+            <li>Walk After Meals: A short walk after meals can aid digestion and improve blood sugar levels.</li>
+            <br>
+            <li>Maintain Good Posture: Proper alignment when sitting or standing can reduce back pain and improve physical well-being.</li>
+            <br>
+            <li>Stay Flexible: Include stretching or yoga in your routine to maintain joint flexibility and prevent injuries.</li>
+            <br>
+            <li>Practice Gratitude: Keep a journal to write down things you’re grateful for daily; this can boost mental health.</li>
+            <br>
+            <li>Digital Detox: Take time away from electronic devices to recharge and focus on real-world connections.</li>
+            <br>
+            <li>Celebrate Small Wins: Acknowledge and reward yourself for small achievements to stay motivated.</li>
+            <br>
+            <li>Practice Mindful Eating: Focus on your meal, chew slowly, and avoid distractions like TV or phones while eating.</li>
+            <br>
+            <li>Learn New Skills: Engage in activities like learning a language, playing an instrument, or trying a new hobby.</li>
+            <br>
+            <li>Set Screen-Free Zones: Designate areas in your home where devices like phones and TVs are not allowed.</li>
+            <br>
+            <li>Track Your Progress: Use apps or journals to monitor habits, goals, and improvements.</li>
+            <br>
+            <li>Adopt a Growth Mindset: Embrace challenges as opportunities to learn and improve.</li>
+            <br>
+            <li>Monitor Health Metrics: Keep track of key numbers like blood pressure, cholesterol, and weight.</li>
+            <br>
+            <li>Visualize Your Goals: Imagine achieving your goals to stay motivated.</li>
+            <br>
+            <h2>Change Your Life – One Tiny Step at a Time</h2>
+            <div class="container2">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/75d_29QWELk?si=kOOVZhEb7GsH4cSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h2>How To Kick Start A Healthy Lifestyle Fast</h2>
+            <div class="container3">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y8HIFRPU6pM?si=KjO1R5P7R2GGjr4S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </ul>
+        <button type="button" onclick="closePopup3()">X</button>
+        </div>
+    </div>
+</div>
+
+<!-- Resources Section -->
+<div class="section resources">
+    <h2>Comprehensive Learning Resources</h2>
+    <div class="cards">
+        <button type="submit" class="card blue" onclick="openPopup4()"> <h3>Articles</h3> </button>
+        <div class="popup4" id="popuparticle">
+            <h2>Why are people with diabetes at increased risk for CVD?</h2>
+            <p>Diabetes is treatable, but even when glucose levels are under control it greatly increases the risk of heart disease and stroke. That’s because people with diabetes, particularly Type 2 diabetes, may have the following conditions that contribute to their risk for developing CVD.</p>
+            <br>
+            <ul>
+                <h3><li>High Blood Pressure</li></h3>
+                <p>High blood pressure is a major risk factor for heart disease and stroke. Studies have shown a link between high blood pressure and insulin resistance. When people have both HBP and diabetes, which is a common combination, their risk for CVD increases even more.</p>
+                <br>
+                <h3><li>Abnormal cholesterol and high triglycerides</li></h3>
+                <p>People with diabetes often have unhealthy cholesterol levels including high LDL (“bad”) cholesterol, low HDL (“good”) cholesterol and high triglycerides. This often occurs in people with premature coronary heart disease. It’s also typical of a lipid disorder linked with insulin resistance called atherogenic dyslipidemia, or diabetic dyslipidemia in people with diabetes. Learn more about cholesterol abnormalities related to diabetes.</p>
+                <br>
+                <h3><li>Obesity</li></h3>
+                <p>Obesity is a major risk factor for CVD and has been strongly linked with insulin resistance. Weight loss can improve CVD risk, decrease insulin concentration and increase insulin sensitivity. Obesity and insulin resistance also have been linked to other risk factors, including high blood pressure.</p>
+                <br>
+                <h3><li>Lack of physical activity</li></h3>
+                <p>Physical inactivity is another modifiable risk factor for insulin resistance and CVD. Exercising and losing weight can prevent or delay the onset of Type 2 diabetes, reduce blood pressure and help reduce the risk for heart attack and stroke. Any type of moderate to vigorous physical activity is beneficial, such as sports, house work, gardening or work-related physical activity.</p>
+                <br>
+                <p>For overall cardiovascular health, the American Heart Association recommends at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous aerobic activity per week (or a combination of the two), plus moderate- to high-intensity muscle-strengthening activity at least two days per week. </p>
+                <br>
+                <h3><li>Poorly controlled blood sugar (too high) or out of normal range</li></h3>
+                <p>Diabetes can cause blood sugar to rise to dangerous levels. Medications may be needed to manage your blood sugar.</p>
+                <br>
+                <h3><li>Smoking</li></h3>
+                <p>Smoking puts people at higher risk for heart disease and stroke, whether they have diabetes or not. Learn how to kick the habit.</p>
+                <br>
+                <p>People with insulin resistance or diabetes and one or more of these risk factors are at even greater risk of heart disease or stroke. People with diabetes may avoid or delay heart and blood vessel disease by managing their risk factors. Your health care team will do periodic testing to assess whether you have developed any of these risk factors for CVD.</p>
+            </ul>
+        <button type="button" onclick="closePopup4()">X</button>
+        </div>
+            
+       
+        <button type="submit" class="card blue" onclick="openPopup5()"><h3>Videos</h3></button>
+        <div class="popup5" id="popvideo">
+            <h2>"Your journey to a stronger, fitter, and happier you starts here! 🎥👊 Hit play now."</h2>
+            <br>
+            <h3>Food You Eat Affects Your Brain </h3>
+            <div class="container4">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xyQY8a-ng6g?si=FkclrD89KrDB5r8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <br>
+            <h3>12 Everyday Habits That Make You Smarter</h3>
+            <div class="container5">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DFHuu6yZiH8?si=kls7YqbeYA0AgOiP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3>Transforming Non-communicable Disease Prevention & Control</h3>
+            <div class="container6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YKEC08i4l8s?si=2F0FSJBU2rxx9JPd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3>Preventing Non-communicable Diseases</h3>
+            <div class="container7">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lSClgMg6nrY?si=CEt6DdseniN0h-pN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3>Nutrition and Non-Communicable Diseases in Aging Populations</h3>
+            <div class="container8">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C0o9Qr6HoxE?si=qSy9WsDHtu604g7v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3>Regular Exercise Important For Persons With NCDs</h3>
+            <div class="container9">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pTh-Ihw20qg?si=g03iMh7_z6IA_IKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3>EXERCISING IS AN IMPORTANT WAS OF FIGHTING NON COMMUNICABLE DISEASES.</h3>
+            <div class="container10 ">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7n3Ak-LnNJM?si=T94nnaivTVI9mAER" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3>Noncommunicable diseases need to be a public health priority</h3>
+            <div class="container11">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qArwuIM84VQ?si=eDvP3bR_4WkK2x_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <button type="button" onclick="closePopup5()">X</button>
+
+        </div>
+        
+    </div>
+</div>
+
+<script>
+         let pop1 = document.getElementById("popuphealth");
+    function openPopup1(){
+        pop1.classList.add("open-pop1")
+    }
+
+    function closePopup1(){
+        pop1.classList.remove("open-pop1")
+    }
+
+    let pop2 = document.getElementById("popupprevent")
+    function openPopup2(){
+        pop2.classList.add("open-pop2")
+    }
+
+    function closePopup2(){
+        pop2.classList.remove("open-pop2")
+    }
+
+    let pop3 = document.getElementById("popuplifesyle");
+    function openPopup3(){
+        pop3.classList.add("open-pop3")
+    }
+
+    function closePopup3(){
+        pop3.classList.remove("open-pop3")
+    }
+
+    let pop4 = document.getElementById("popuparticle");
+    function openPopup4(){
+        pop4.classList.add("open-pop4")
+    }
+
+    function closePopup4(){
+        pop4.classList.remove("open-pop4")
+    }
+
+    let pop5 = document.getElementById("popvideo");
+    function openPopup5(){
+        pop5.classList.add("open-pop5")
+    }
+
+    function closePopup5(){
+        pop5.classList.remove("open-pop5")
+    }
+
+</script>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 NCD Fitness. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

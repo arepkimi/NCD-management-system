@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCD Fitness - Recommendation Module</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fbe4c6;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #5c4033;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            margin-right: 10px;
+            width: 50px; /* Adjusted size */
+        }
+
+        header .logout-icon img {
+            width: 30px; /* Adjusted size */
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .recommendation-section {
+            background-color: #fff2df;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: left;
+        }
+
+        .recommendation-section h2 {
+            color: #5c4033;
+            margin-bottom: 15px;
+        }
+
+        .recommendation-section ul {
+            list-style-type: square;
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .recommendation-section ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #5c4033;
+            color: #fff;
+            padding: 10px 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            background-color: #5c4033;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #432b24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/cat304/src/pic/logo.png" alt="Logo">
+            <strong>NCD Fitness</strong>
+        </div>
+        <div class="logout-icon">
+            <a href="dashboard.php"><img src="/cat304/src/pic/6img.png" alt="Menu.symbol"></a>
+            <a href="logout.html"><img src="/cat304/src/pic/5.img.png" alt="logout-icon"></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Health Recommendations for Diabetes</h1>
+        <h3>Here are your personalized recommendations for managing your diabetes level!</h3>
+
+        <div class="recommendation-section">
+            <h2>Recommended Diet</h2>
+            <ul>
+                <li>Replace white rice with brown rice or quinoa to help manage blood sugar levels.</li>
+                <li>Consume non-starchy vegetables such as broccoli, spinach and kale to improve insulin sensitivity.</li>
+                <li>Include healthy fats like avocado and olive oil to regulate blood sugar and prevent spikes.</li>
+                <li>Avoid sugary drinks like soda and fruit juices. Opt for water or unsweetened herbal teas.</li>
+                <li>Limit the intake of refined carbohydrates, such as bread and pastries and choose whole grains instead.</li>
+            </ul>
+        </div>
+
+        <div class="recommendation-section">
+            <h2>Recommended Exercise</h2>
+            <ul>
+                <li>Engage in moderate aerobic exercises, such as walking or swimming, for at least 150 minutes per week.</li>
+                <li>Incorporate strength training exercises to help maintain muscle mass and regulate blood sugar levels.</li>
+                <li>Try yoga or stretching exercises to improve flexibility and reduce stress, which can affect blood sugar control.</li>
+                <li>Take short breaks during long periods of sitting to increase circulation and avoid blood sugar spikes.</li>
+            </ul>
+        </div>
+
+        <div class="recommendation-section">
+            <h2>Recommended Lifestyle Changes</h2>
+            <ul>
+                <li>Monitor your blood glucose regularly to understand how different foods and activities affect your levels.</li>
+                <li>Stay hydrated by drinking plenty of water throughout the day, especially if you experience frequent urination.</li>
+                <li>Maintain a regular sleep schedule, as poor sleep can negatively impact insulin sensitivity.</li>
+                <li>Practice stress-reduction techniques like deep breathing or meditation, as stress can elevate blood sugar levels.</li>
+                <li>Quit smoking and limit alcohol consumption to reduce the risk of complications associated with diabetes.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NCD Fitness. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

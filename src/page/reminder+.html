@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCD Alarm</title>
+    <style>
+        /* Keep your existing styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff2df;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #5c4033;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .header-icons img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        .alarm-container {
+            background: #D3A376;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            width: 300px;
+            padding: 10px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 38%;
+        }
+        .alarm-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+        }
+        input {
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            color: black;
+        }
+        input:focus {
+            outline: none;
+            border-color: #007BFF;
+        }
+        .submit-button {
+            margin-top: auto;
+            align-self: flex-end;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            bottom: 0px;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+            bottom: 0px;
+        }
+        .set {
+            right:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; 
+            color: #1a0485;
+            margin-bottom: -2%;
+            padding-top: 1%;
+        }
+        .set-title h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a0485;
+            margin-left: 10;
+        }
+        .add-button {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 30%;
+            width: 30px;
+            height: 30px;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #5c4033;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            width: 100%;
+            height:40px;
+            margin-top:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="/cat304/src/pic/logo.png" alt="NCD Fitness Logo">
+        <div class="header-icons">
+            <a href="dashboard.php"><img src="/cat304/src/pic/6img.png" alt="Menu.symbol"></a> 
+            <a href="logout.html"><img src="/cat304/src/pic/5.img.png" alt="logout.symbol"> </a>
+        </div>
+    </div>
+    <div class="set">
+        <div class="set title"><h2>Set New Alarm</h2></div>
+        <div class="add-button">+</div>
+    </div>
+    <div class="alarm-container">
+        <form class="alarm-form" action="reminderadd.php" method="POST">
+            <div class="form-group">
+                <label for="alarm-time">Time:</label>
+                <input type="time" id="alarm-time" name="alarm-time" required>
+            </div>
+            <div class="form-group">
+                <label for="alarm-description">Description:</label>
+                <input type="text" id="alarm-description" name="alarm-description" placeholder="Enter description" required>
+            </div>
+            <div class="form-group">
+                <label for="alarm-phone">Phone Number:</label>
+                <input type="text" id="alarm-phone" name="alarm-phone" placeholder="Enter phone number (with country code)" required>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 NCD Fitness. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

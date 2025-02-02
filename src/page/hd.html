@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCD Fitness - Recommendation Module</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fbe4c6;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #5c4033;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            margin-right: 10px;
+            width: 50px; /* Adjusted size */
+        }
+
+        header .logout-icon img {
+            width: 30px; /* Adjusted size */
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .recommendation-section {
+            background-color: #fff2df;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: left;
+        }
+
+        .recommendation-section h2 {
+            color: #5c4033;
+            margin-bottom: 15px;
+        }
+
+        .recommendation-section ul {
+            list-style-type: square;
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .recommendation-section ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #5c4033;
+            color: #fff;
+            padding: 10px 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            background-color: #5c4033;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #432b24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/cat304/src/pic/logo.png" alt="Logo">
+            <strong>NCD Fitness</strong>
+        </div>
+        <div class="logout-icon">
+            <a href="dashboard.php"><img src="/cat304/src/pic/6img.png" alt="Menu.symbol"></a>
+            <a href="logout.html"><img src="/cat304/src/pic/5.img.png" alt="logout-icon"></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Health Recommendations for Heart Disease </h1>
+        <h3>Here are your personalized recommendations for managing your heart health!</h3>
+
+        <div class="recommendation-section">
+            <h2>Recommended Diet</h2>
+            <ul>
+                <li>Choose heart-healthy fats like olive oil, avocado and nuts instead of saturated fats found in butter and fried foods.</li>
+                <li>Incorporate more fiber-rich foods like oats, lentils and vegetables to help lower cholesterol levels.</li>
+                <li>Eat lean proteins such as skinless chicken, turkey and fish like salmon to support heart health.</li>
+                <li>Limit salt intake to control blood pressure. Use herbs and spices like garlic and turmeric for flavor instead of salt.</li>
+                <li>Consume antioxidant-rich fruits like berries, apples and citrus fruits to help reduce inflammation in the body.</li>
+            </ul>
+        </div>
+
+        <div class="recommendation-section">
+            <h2>Recommended Exercise</h2>
+            <ul>
+                <li>Engage in at least 150 minutes of moderate-intensity aerobic exercise per week, such as brisk walking or cycling.</li>
+                <li>Incorporate strength training exercises 2-3 times a week to improve heart health and build muscle.</li>
+                <li>Practice relaxation exercises such as yoga or tai chi to reduce stress, which can affect heart health.</li>
+                <li>Consider swimming, which is a low-impact exercise that can improve cardiovascular fitness.</li>
+            </ul>
+        </div>
+
+        <div class="recommendation-section">
+            <h2>Recommended Lifestyle Changes</h2>
+            <ul>
+                <li>Monitor your blood pressure regularly and aim to keep it within a healthy range.</li>
+                <li>Quit smoking and avoid exposure to secondhand smoke, as smoking is a major risk factor for heart disease.</li>
+                <li>Limit alcohol intake to no more than one drink per day for women and two drinks for men.</li>
+                <li>Maintain a healthy weight by eating a balanced diet and exercising regularly to prevent additional strain on your heart.</li>
+                <li>Get adequate rest; aim for 7-9 hours of sleep each night to support overall heart health.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NCD Fitness. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

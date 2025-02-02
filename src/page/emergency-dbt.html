@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Emergency
+    </title>
+    <link rel="stylesheet" href="/cat304//src/style/emergency.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img src="/cat304/src/pic/NCDFitness-logo.svg" class="logo">
+      </div>
+
+      <div class="middle-section">
+        <p class="header-title">
+          EMERGENCY ASSISTANCE
+        </p>
+      </div>
+
+      <div class="right-section">
+        <span class="material-symbols-rounded" onclick="location.href='dashboard.php'">home</span>
+        <span class="material-symbols-rounded" onclick="location.href='logout.html'">logout</span>
+      </div>
+      
+    </div>
+    <div class="description">
+      <p>
+        If you are experiencing a medical emergency, press the 
+        button below to connect with emergency services immediately.
+      </p>
+    </div>
+
+    <div class="button">
+      <button class="emergency-button" onclick="openPopupCall()">
+        EMERGENCY CALL
+      </button>
+    </div>
+
+    <div id="popup-call">
+      <div class="close-button">
+        <span class="material-symbols-rounded" onclick="closePopupCall()">close</span>
+      </div>
+
+      <h2 class="popup-call-title">Emergency Call List</h2>
+
+      <div class="emergency-contact-grid">
+        <div class="emergency-contact">
+          <div class="contact-logo">
+            <img src="/cat304/src/pic/ambulance-pic.svg">
+          </div>
+          <div class="contact-detail">
+            <p class="contact-name">Gleneagles Hospital Penang</p>
+            <p>Ambulance / Emergency</p>
+            <p>+604 222 9199</p>
+          </div>
+        </div>
+        
+        <div class="emergency-contact">
+          <div class="contact-logo">
+            <img src="/cat304/src/pic/ambulance-pic.svg">
+          </div>
+          <div class="contact-detail">
+            <p class="contact-name">KMI Kuala Terengganu</p>
+            <p>Ambulance / Emergency</p>
+            <p>+609 633 6866</p>
+          </div>
+        </div>
+
+        
+        <div class="emergency-contact">
+          <div class="contact-logo">
+            <img src="/cat304/src/pic/ambulance-pic.svg">
+          </div>
+          <div class="contact-detail">
+            <p class="contact-name">Subang Jaya Medical Centre</p>
+            <p>Ambulance / Emergency</p>
+            <p>+603 5639 1212</p>
+          </div>
+        </div>
+
+        <div class="emergency-contact">
+          <div class="contact-logo">
+            <img src="/cat304/src/pic/ambulance-pic.svg">
+          </div>
+          <div class="contact-detail">
+            <p class="contact-name">Kempas Medical Centre</p>
+            <p>Ambulance / Emergency</p>
+            <p>+607 2368 999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-doctor">
+      <div class="close-button">
+        <span class="material-symbols-rounded" onclick="closePopupDoctor()">close</span>
+      </div>
+
+      <h2 class="popup-doctor-title">Doctor List</h2>
+
+      <div class="doctor-grid">
+        <div class="doctor-container">
+          <div class="doctor-picture">
+            <img class="doctor-image" src="/cat304/src/pic/doctor-pic.svg"/>
+          </div>
+          <div class="doctor-profile">
+            <div class="doctor-name">
+              <p>Dr Alexander Tan Tong Boon</p>
+            </div>
+            <div class="doctor-detail">
+              <div class="property">
+                <p>Specialty</p>
+                <p>Gender</p>
+                <p>Whatsapp</p>
+              </div>
+              <div class="property-value">
+                <p>: Endocrinology & Diabetes</p>
+                <p>: Male</p>
+                <p>: <a href="https://wa.me/60329918792" target="_blank">+603-7951 4732</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-container">
+          <div class="doctor-picture">
+            <img class="doctor-image" src="/cat304/src/pic/doctor-pic.svg"/>
+          </div>
+          <div class="doctor-profile">
+            <div class="doctor-name">
+              <p>Dr Siti Harnida Binti Md Isa</p>
+            </div>
+            <div class="doctor-detail">
+              <div class="property">
+                <p>Specialty</p>
+                <p>Gender</p>
+                <p>Whatsapp</p>
+              </div>
+              <div class="property-value">
+                <p>: Endocrinology & Diabetes</p>
+                <p>: Female</p>
+                <p>: <a href="https://wa.me/60369711632" target="_blank">+603-6971 1632</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-container">
+          <div class="doctor-picture">
+            <img class="doctor-image" src="/cat304/src/pic/doctor-pic.svg"/>
+          </div>
+          <div class="doctor-profile">
+            <div class="doctor-name">
+              <p>Dr Subashini A/P Rajoo</p>
+            </div>
+            <div class="doctor-detail">
+              <div class="property">
+                <p>Specialty</p>
+                <p>Gender</p>
+                <p>Whatsapp</p>
+              </div>
+              <div class="property-value">
+                <p>: Endocrinology & Diabetes</p>
+                <p>: Female</p>
+                <p>: <a href="https://wa.me/60374919192" target="_blank">+603-7491 9192</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-hospital">
+      <div class="close-button">
+        <span class="material-symbols-rounded" onclick="closePopupHospital()">close</span>
+      </div>
+
+      <h2 class="popup-hospital-title">Hospital List</h2>
+
+      <div class="hospital-grid">
+        <div class="hospital-container">
+          <div class="hospital-picture">
+            <img src="/cat304/src/pic/hospital-pic.svg">
+          </div>
+          <div class="hospital-info">
+            <p class="hospital-name">Hospital Pulau Pinang</p>
+            <p>Jalan Residensi 10990 George Town,Pulau Pinang Malaysia</p>
+            <a href="https://www.google.com/maps/place/Penang+General+Hospital/@5.4168005,100.308654,17z/data=!3m1!4b1!4m6!3m5!1s0x304ac3b15a331655:0xa381d352fd842b5f!8m2!3d5.4168005!4d100.3112289!16s%2Fg%2F122tcqj0?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Address</a>
+          </div>
+        </div>
+
+        <div class="hospital-container">
+          <div class="hospital-picture">
+            <img src="/cat304/src/pic/hospital-pic.svg">
+          </div>
+          <div class="hospital-info">
+            <p class="hospital-name">Hospital Ampang</p>
+            <p>Jalan Mewah Utara Pandan Mewah 68000 Ampang Selangor</p>
+            <a href="https://www.google.com/maps/place/Ampang+Hospital/@3.1282107,101.7614554,17z/data=!3m1!4b1!4m6!3m5!1s0x31cc368d8851634f:0x4c4c8e4bfb2c1941!8m2!3d3.1282107!4d101.7640303!16s%2Fg%2F121p_trm?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Address</a>
+          </div>
+        </div>
+
+        <div class="hospital-container">
+          <div class="hospital-picture">
+            <img src="/cat304/src/pic/hospital-pic.svg">
+          </div>
+          <div class="hospital-info">
+            <p class="hospital-name">Hospital Sultanah Nur Zahirah</p>
+            <p>Jalan Sultan Mahmud 20400 Kuala Terengganu Terengganu</p>
+            <a href="https://www.google.com/maps/place/Sultanah+Nur+Zahirah+Hospital,+Kuala+Terengganu/@5.3247072,103.1479997,17z/data=!4m14!1m7!3m6!1s0x31b7bfb426ef2e85:0x687526b9d5ee20ce!2sSultanah+Nur+Zahirah+Hospital,+Kuala+Terengganu!8m2!3d5.3247072!4d103.1505746!16s%2Fg%2F11jrqd002y!3m5!1s0x31b7bfb426ef2e85:0x687526b9d5ee20ce!8m2!3d5.3247072!4d103.1505746!16s%2Fg%2F11jrqd002y?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Address</a>
+          </div>
+        </div>
+
+        <div class="hospital-container">
+          <div class="hospital-picture">
+            <img src="/cat304/src/pic/hospital-pic.svg">
+          </div>
+          <div class="hospital-info">
+            <p class="hospital-name">Hospital Sultan Haji Ahmad Shah</p>
+            <p>Jalan Maran, 28000 Temerloh, Pahang</p>
+            <a href="https://www.google.com/maps/place/Sultan+Haji+Ahmad+Shah+Hospital,+Temerloh/@3.4531541,102.4489645,17z/data=!3m1!4b1!4m6!3m5!1s0x31cec7773ad78f01:0xe7a5e471a11b96f5!8m2!3d3.4531541!4d102.4515394!16s%2Fg%2F1yw0_wxcc?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Address</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="description">
+      <p>
+        You can also use the links below for additional resources or medical guidance.
+      </p>
+    </div>
+    <div class="contact">
+        <p class="contact-link" onclick="openPopupDoctor()">
+            Contact a Doctor
+        </p>
+        <p class="contact-link" onclick="openPopupHospital()">
+            Visit a Hospital
+        </p>
+    </div>
+
+    <div class="bottom">
+        &copy; 2024 NCD  Fitness. All Rights Reserved.
+    </div>
+
+    <script>
+      function openPopupCall(){
+        document.getElementById("popup-call").style.display = "block";
+      }
+
+      function closePopupCall() {
+        document.getElementById("popup-call").style.display = "none";
+      }
+
+      function openPopupDoctor(){
+        document.getElementById("popup-doctor").style.display = "block";
+      }
+
+      function closePopupDoctor() {
+        document.getElementById("popup-doctor").style.display = "none";
+      }
+
+      function openPopupHospital(){
+        document.getElementById("popup-hospital").style.display = "block"
+      }
+
+      function closePopupHospital() {
+        document.getElementById("popup-hospital").style.display = "none";
+      }
+
+    </script>
+
+  </body>
+</html>

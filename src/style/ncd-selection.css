@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #FFF2DF;
+  font-family: Montserrat;
+}
+
+.header-title{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card{
+  background-color: #FFE0B2;
+  width: 250px;
+  height: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px #cfcfcf;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover{
+  transform: scale(0.97);
+}
+
+.card-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.material-symbols-rounded{
+  font-size: 60px;
+}
+
+.ncd-type{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-description{
+  margin-top: 35px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+#blood-pressure{
+  color: #2563eb;
+}
+
+#diabetes{
+  color: #9333EA;
+}
+
+#heart-disease{
+  color: #DC2626;
+}

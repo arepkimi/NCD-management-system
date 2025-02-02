@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4A3626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  width: 100%;
+  background-color: #4A3626;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  background-color: #F5E4C2;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.form-section {
+  padding: 48px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-section h2 {
+  margin: 0 0 28px;
+  font-size: 28px;
+  color: #4A3626;
+}
+
+.form-section input {
+  width: 95%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.form-section button {
+  width: 101.5%;
+  padding: 15px;
+  background-color: #C8A16A;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #B8925B;
+}
+
+.form-section a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #4A3626;
+  font-size: 16px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline by default */
+    color: #4A3626; /* Dark brown text */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}

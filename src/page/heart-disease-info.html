@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NCD Information</title>
+
+    <link rel="stylesheet" href="/cat304/src/style/heart-disease-info.css">
+  </head>
+
+  <body>
+    <h1 class="title">Heart Disease</h1>
+
+    <div class="user-input">
+      <form class="form" action="heart-disease-info.php" method="POST">
+        <div class="history-input">
+          <label for="history">Does anyone in your family have heart disease?</label><br>
+          <input type="radio" id="yes" value="Yes" name="history" required/>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" value="No" name="history" required/>
+          <label for="no">No</label>
+        </div>
+
+        <br/>
+
+        <div class="smoke-input">
+          <label for="smoke">Do you smoke?</label><br>
+          <input type="radio" id="yes1" value="Yes" name="smoke" required/>
+          <label for="yes1">Yes</label>
+          <input type="radio" id="no2" value="No" name="smoke" required/>
+          <label for="no2">No</label>
+        </div>
+
+        <br/>
+
+        <div class="exercise-input">
+          <label for="exercise">How would you describe your current level of physical activity?</label><br>
+          <select id="exercise" name="exercise">
+            <option value="Sedentary">Sedentary</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Active">Active</option>
+          </select>
+        </div>
+
+        <br/>
+
+        <div class="diet-input">
+          <label for="diet">How often you consume fried food or fast food?</label><br>
+          <select id="diet" name="diet">
+            <option value="Never">Never</option>
+            <option value="Sometime">Sometime</option>
+            <option value="Often">Often</option>
+          </select>
+        </div>
+
+        <br/>
+
+        <div class="buttons">
+          <button type="reset" class="reset-button">Reset</button>
+          <button type="submit" name="submit" class="submit-button">Save and Continue</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

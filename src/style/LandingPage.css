@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3E2522; /* Dark Brown */
+    color: #FFF2DF; /* Very Light Beige */
+    font-weight: bolder;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #8C6E63; /* Brown */
+    border-bottom: 2px solid #D3A376; /* Light Brown */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo img {
+    height: 40px;
+    width: 65px;
+    margin-right: 20px;
+}
+
+.auth-buttons .btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #3E2522; /* Dark Brown */
+    background-color: #FFE0B2; /* Light Beige */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #D3A376; /* Light Brown */
+}
+
+.main-content {
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFF2DF; /* Very Light Beige */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #D3A376; /* Light Brown */
+}
+
+.disease-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #FFE0B2; /* Light Beige */
+}
+
+.disease-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFF2DF; /* Very Light Beige */
+    padding: 20px;
+    width: 300px;
+    border: 2px solid #D3A376; /* Light Brown */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #3E2522; /* Dark Brown */
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+
+.card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #3E2522; /* Dark Brown */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #D3A376; /* Light Brown */
+    font-size: 0.8rem;
+    color: #3E2522; /* Dark Brown */
+    font-weight: bolder;
+}
+
+.disease-image{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
